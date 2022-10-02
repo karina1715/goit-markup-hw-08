@@ -1,4 +1,4 @@
-body {
+:root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
@@ -7,6 +7,11 @@ body {
   --black-color: #000000;
   --primary-background-color: #f5f4fa;
   --gray-text-color: rgba(255, 255, 255, 0.6);
+  --background-color-button: #188ceb;
+}
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -76,8 +81,9 @@ body {
   cursor: pointer;
   padding: 6px 22px;
 }
+.default-button:hover,
 .default-button:hover {
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 .primary-button {
@@ -91,6 +97,10 @@ body {
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
+}
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--background-color-button);
 }
 .dark-bg {
   background-color: var(--dark-bg);
@@ -117,16 +127,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.header {
+.second-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
 }
 .list-item {
   background-color: var(--primary-white-color);
+}
+.team-section {
+  background-color: var(--primary-background-color);
 }
 .person-name {
   font-weight: 500;
