@@ -127,7 +127,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.second-header {
+.team-section {
+  background-color: var(--primary-background-color);
+}
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
