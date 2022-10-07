@@ -314,6 +314,9 @@ div - class test container*/
   align-items: center;
   justify-content: center;
 }
+.visually-hidden-list .item:first-of-type {
+  margin-left: 0;
+}
 
 .flex-container {
   display: flex;
@@ -389,5 +392,7 @@ img {
 }
 .bordered {
   border: 1px solid #ececec;
+}
+.justified-between {
   justify-content: space-between;
 }
