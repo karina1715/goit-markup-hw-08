@@ -71,7 +71,6 @@ body {
 }
 .auth-nav {
   display: flex;
-  margin-left: auto;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -111,7 +110,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
-  margin-left: 8px;
   justify-content: center;
 }
 .default-button:hover,
@@ -244,15 +242,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
-  margin-top: 20px;
-  margin-left: 24px;
 }
 .card-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 .link-text-decorated {
   text-decoration: none;
@@ -313,13 +307,11 @@ body {
 div - class test container*/
 .visually-hidden-list {
   display: flex;
-  margin-left: 30px;
   align-items: center;
 }
 .visually-hidden-list .item {
-  margin-left: 30px;
+  margin-left: 8px;
   align-items: center;
-  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -327,6 +319,8 @@ div - class test container*/
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 .flex-element {
   flex-basis: calc((100%-60px) / 3);
@@ -360,7 +354,6 @@ img {
 }
 .list {
   list-style: none;
-  padding-left: 0;
 }
 .flex {
   display: flex;
@@ -382,9 +375,19 @@ img {
 .contacts-wrapper {
   padding: 60px 0;
 }
-.ggg {
+.ards-wrappe {
   margin-top: 50px;
 }
-.ttt {
+.filter-buttons {
   justify-content: center;
+}
+.card-info-wrapper {
+  padding: 20px 24px;
+}
+.team-list .list-item {
+  border-radius: 0px 0px 4px 4px;
+}
+.bordered {
+  border: 1px solid #ececec;
+  justify-content: space-between;
 }

@@ -12,10 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel=“stylesheet”
+    href=“https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css”
+    integrity=“sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==”
+    crossorigin=“anonymous” referrerpolicy=“no-referrer” />
   </head>
   <body>
     <header>
-      <div class="container flex">
+      <div class="container flex bordered">
         <nav class="main-nav">
           <a class="logo" href="./index.html"
             ><span class="logo-part">Web</span>Studio</a
@@ -53,144 +57,162 @@
     </header>
     <main>
       <section class="section">
-        <div class="container list flex ttt">
+        <div class="container list flex filter-buttons">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="visually-hidden-list "></ul>
-          <li class="item">
-            <button class="default-button" type="button">Усі</button>
-          </li>
-          <li class="item">
-            <button class="default-button" type="button">Веб-сайти</button>
-          </li>
-          <li class="item">
-            <button class="default-button" type="button">Додатки</button>
-          </li>
-          <li class="item">
-            <button class="default-button" type="button">Дизайн</button>
-          </li>
-          <li class="item">
-            <button class="default-button" type="button">Маркетинг</button>
-          </li>
-        </ul>
-        </div>
-        <div class="container ggg">
-          <ul class="list flex-container">
-           <div>
-             <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img19.jpg" alt="ноутбук" width="370"
-                /></a>
-                <h2 class="card-header">Технокряк</h2>
-                <p class="card-text text-gray">Веб-сайт</p>
+          <ul class="visually-hidden-list list">
+            <li class="item">
+              <button class="default-button" type="button">Усі</button>
             </li>
-           </div>
-           <div>
-             <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img9.jpg" alt="постер" width="370"
-                /></a>
-                <h2 class="card-header">Постер New Orlean vs Golden Star</h2>
-                <p class="card-text text-gray">Дизайн</p>
+            <li class="item">
+              <button class="default-button" type="button">Веб-сайти</button>
             </li>
-           </div>
-            <div>
-              <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img22.jpg" alt="логотип" width="370"
-                /></a>
-                <h2 class="card-header">Ресторан Seafood</h2>
-                <p class="card-text text-gray">Додаток</p>
+            <li class="item">
+              <button class="default-button" type="button">Додатки</button>
             </li>
-            </div>
-            <div>
-              <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img3.jpg" alt="наушники" width="370"
-                /></a>
-                <h2 class="card-header">Проєкт Prime</h2>
-                <p class="card-text text-gray">Маркетинг</p>
+            <li class="item">
+              <button class="default-button" type="button">Дизайн</button>
             </li>
-            </div>
-            <div>
-              <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img4.jpg" alt="коробка" width="370"
-                /></a>
-                <h2 class="card-header">Проєкт Boxes</h2>
-                <p class="card-text text-gray">Додаток</p>
+            <li class="item">
+              <button class="default-button" type="button">Маркетинг</button>
             </li>
-            </div>
-           <div>
-             <li class="flex-element">
-                <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img5.jpg" alt="ком'ютер" width="370"
-                /></a>
-                <h2 class="card-header">Inspiration has no Borders</h2>
-                <p class="card-text text-gray">Веб-сайт</p>
-            </li>
-           </div>
-          <div>
-              <li class="flex-element">
-                  <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img6.jpg" alt="книга" width="370"
-                /></a>
-                <h2 class="card-header">Видання Limited Edition</h2>
-                <p class="card-text text-gray">Дизайн</p>
-            </li>
-          </div>
-            <div>
-              <li class="flex-element">
-                  <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img7.jpg" alt="етикетка" width="370"
-                /></a>
-                <h2 class="card-header">Проєкт LAB</h2>
-                <p class="card-text text-gray">Маркетинг</p>
-            </li>
-            </div>
-           <div>
-             <li class="flex-element">
-                  <a class="link-text-decorated" href="#">
-                  <img src="./imagest/img8.jpg" alt="ноутбук" width="370"
-                /></a>
-                <h2 class="card-header">Growing Business</h2>
-                <p class="card-text text-gray">Додаток</p>
-            </li>
-           </div>
           </ul>
         </div>
+        <ul class="list flex-container container cards-wrapper">
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img19.jpg" alt="ноутбук" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Технокряк</h2>
+                <p class="card-text text-gray">Веб-сайт</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img9.jpg" alt="постер" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Постер New Orlean vs Golden Star</h2>
+                <p class="card-text text-gray">Дизайн</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img22.jpg" alt="логотип" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Ресторан Seafood</h2>
+                <p class="card-text text-gray">Додаток</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img3.jpg" alt="наушники" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Проєкт Prime</h2>
+                <p class="card-text text-gray">Маркетинг</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img4.jpg" alt="коробка" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Проєкт Boxes</h2>
+                <p class="card-text text-gray">Додаток</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img5.jpg" alt="ком'ютер" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Inspiration has no Borders</h2>
+                <p class="card-text text-gray">Веб-сайт</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img6.jpg" alt="книга" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Видання Limited Edition</h2>
+                <p class="card-text text-gray">Дизайн</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img7.jpg" alt="етикетка" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Проєкт LAB</h2>
+                <p class="card-text text-gray">Маркетинг</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="flex-element">
+              <a class="link-text-decorated" href="#">
+                <img src="./imagest/img8.jpg" alt="ноутбук" width="370"
+              /></a>
+              <div class="card-info-wrapper">
+                <h2 class="card-header">Growing Business</h2>
+                <p class="card-text text-gray">Додаток</p>
+              </div>
+            </li>
+          </div>
+        </ul>
       </section>
     </main>
     <footer class="dark-bg contacts-wrapper">
-    <div class="container">
-      <div class="logo-wrapper">
+      <div class="container">
+        <div class="logo-wrapper">
           <a class="logo-white" href="/index.html"
-        ><span class="logo-part-white">Web</span>Studio</a
-      >
+            ><span class="logo-part-white">Web</span>Studio</a
+          >
+        </div>
+        <address>
+          <ul class="list">
+            <li class="address-wrapper">
+              <a
+                class="address-link"
+                href="address:https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address-wrapper">
+              <a
+                class="address-text active-text"
+                href="malto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-wrapper">
+              <a class="address-text active-text" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
-      <address>
-        <ul class="list">
-          <li class="address-wrapper">
-            <a
-              class="address-link"
-              href="address:https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="address-wrapper">
-            <a class="address-text active-text" href="malto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-wrapper">
-            <a class="address-text active-text" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
     </footer>
   </body>
 </html>
