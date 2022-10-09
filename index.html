@@ -18,8 +18,8 @@
     crossorigin=“anonymous” referrerpolicy=“no-referrer” />
   </head>
   <body>
-    <header>
-      <div class="container flex bordered justified-between">
+    <header class="header-wrapper">
+      <div class="container flex justified-between">
         <nav class="main-nav">
           <a class="logo" href="/index.html"
             ><span class="logo-part">Web</span>Studio</a
@@ -53,11 +53,10 @@
       </div>
     </header>
     <main>
-      <section class="hero dark-bg section.no-padding">
-        <h1 class="container hero-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
+      <section class="hero dark-bg">
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        </div>
         <div class="flex-centered">
           <button class="primary-button" type="button">Замовити послугу</button>
         </div>
@@ -137,8 +136,10 @@
                 alt="фото Ігоря Дем'яненко"
                 width="270"
               />
-              <h3 class="person-name">Ігор Дем'яненко</h3>
-              <p class="text-gray person-text">Product Designer</p>
+              <div class="perso-info-wrapper">
+                <h3 class="person-name">Ігор Дем'яненко</h3>
+                <p class="text-gray person-text">Product Designer</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -146,8 +147,10 @@
                 alt="фото Ольги Рєпіної"
                 width="270"
               />
-              <h3 class="person-name">Ольга Рєпіна</h3>
-              <p class="text-gray person-text">Frontend Developer</p>
+              <div class="perso-info-wrapper">
+                <h3 class="person-name">Ольга Рєпіна</h3>
+                <p class="text-gray person-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -155,8 +158,10 @@
                 alt="фото Миколи Тарасова"
                 width="270"
               />
-              <h3 class="person-name">Микола Тарасов</h3>
-              <p class="text-gray person-text">Marketing</p>
+              <div class="perso-info-wrapper">
+                <h3 class="person-name">Микола Тарасов</h3>
+                <p class="text-gray person-text">Marketing</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -164,8 +169,10 @@
                 alt="фото Михайла Єрмакова"
                 width="270"
               />
-              <h3 class="person-name">Михайло Єрмаков</h3>
-              <p class="text-gray person-text">UI Designer</p>
+              <div class="perso-info-wrapper">
+                <h3 class="person-name">Михайло Єрмаков</h3>
+                <p class="text-gray person-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,14 +181,12 @@
     <!--footer-->
     <footer class="dark-bg contacts-wrapper">
       <div class="container">
-        <div class="logo-wrapper">
-          <a class="logo-white" href="/index.html"
-            ><span class="logo-part-white">Web</span>Studio</a
-          >
-        </div>
-        <address>
+        <a class="logo-white" href="/index.html"
+          ><span class="logo-part-white">Web</span>Studio</a
+        >
+        <address class="address-wrapper">
           <ul class="list">
-            <li class="address-wrapper">
+            <li class="address-list">
               <a
                 class="address-link"
                 href="address:https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -190,14 +195,14 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="address-wrapper">
+            <li class="address-list">
               <a
                 class="address-text active-text"
                 href="malto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-wrapper">
+            <li class="address-list">
               <a class="address-text active-text" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >

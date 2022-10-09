@@ -84,9 +84,6 @@ img {
 .logo-part-white {
   color: var(--accent-color);
 }
-.logo-wrapper {
-  padding-bottom: 20px;
-}
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -163,11 +160,17 @@ img {
   background-color: var(--dark-bg);
 }
 .hero {
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .hero-title {
-  margin-top: 0;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -250,7 +253,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .person-text {
@@ -258,7 +260,6 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 .card-header {
   font-weight: 700;
@@ -275,8 +276,6 @@ img {
 }
 .link-text-decorated {
   text-decoration: none;
-  margin-bottom: 20px;
-  width: 33.3%;
 }
 .active-link {
   color: var(--accent-color);
@@ -308,28 +307,21 @@ img {
   color: var(--gray-text-color);
   font-style: normal;
 }
-.address-wrapper {
-  padding-bottom: 9px;
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1230px;
+  max-width: 1200px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid #ffa500;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.no-padding {
-  padding-top: none;
-  padding-bottom: none;
-}
-/* portfolio test 
-div - class test container*/
 .visually-hidden-list {
   display: flex;
   align-items: center;
@@ -347,12 +339,11 @@ div - class test container*/
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+
   margin-top: 50px;
 }
 .flex-element {
-  flex-basis: calc((100%-60px) / 3);
-  border: 2px solid var(--border-bottom-color);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .flex-element:nth-child(n + 3) {
   margin-right: 0;
@@ -376,21 +367,31 @@ div - class test container*/
 .contacts-wrapper {
   padding: 60px 0;
 }
-.ards-wrappe {
-  margin-top: 50px;
-}
+
 .filter-buttons {
   justify-content: center;
 }
 .card-info-wrapper {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .team-list .list-item {
   border-radius: 0px 0px 4px 4px;
 }
-.bordered {
-  border: 1px solid #ececec;
-}
+
 .justified-between {
   justify-content: space-between;
+}
+.address-wrapper {
+  margin-top: 20px;
+}
+.header-wrapper {
+  border-bottom: 32px;
+  border: 1px solid #ececec;
+}
+.perso-info-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
