@@ -107,8 +107,15 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-/*margin: 0;
-  padding: 0;*/
+
+.contacts::before {
+  content:"";
+  background-image: ;
+  margin-right: 10px;
+  background-color: #212121;
+}
+
+
 .header-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -135,9 +142,10 @@ img {
   justify-content: center;
 }
 .default-button:hover,
-.default-button:hover {
+.default-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .primary-button {
   font-family: inherit;
@@ -166,6 +174,15 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../imagest/img111.jpg);
 }
 .hero-title {
   max-width: 696px;
@@ -190,6 +207,19 @@ img {
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
 }
+.feature-list .item::before{
+  content: "";
+  display: block;
+  height:120px;
+ background-size:auto;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-color: var(--primary-background-color);
+ border-radius: 4px;
+ margin-bottom: 30px;
+}
+
+
 .details-title {
   font-weight: 700;
   font-size: 14px;
@@ -235,6 +265,7 @@ img {
 .list-item {
   background-color: var(--primary-white-color);
   width: 25%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .list-item:not(:last-child) {
   margin-right: 30px;
@@ -260,6 +291,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .card-header {
   font-weight: 700;
@@ -349,6 +381,9 @@ img {
 .flex-element:nth-child(n + 3) {
   margin-right: 0;
 }
+.flex-element:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .list {
   list-style: none;
 }
@@ -386,7 +421,113 @@ img {
   border-bottom: 32px;
   border: 1px solid #ececec;
 }
-.perso-info-wrapper {
+.person-info-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+/*svg*/
+.offer-action{
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.actions{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.actions .icon-edit{
+  content: "";
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+cursor: pointer;
+}
+
+.button{
+  padding: 0;
+  border: none;
+  color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-top: 20px;
+  
+}
+.button:hover,
+.button:focus{
+background-color: var(--accent-color);
+}
+.button-icon{
+  fill: currentColor;
+  background-position: center;
+}
+.icons-wrapper{
+  display: flex;
+  margin-right: 50px;
+}
+
+.person-soc-list{
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.person-soc-item{
+width: 44px;
+height: 44px;
+}
+
+.person-soc-link{
+width: 100%;
+height: 100%;
+background-color: var(--primary-white-color);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.person-soc-icon{
+  fill:#AFB1B8;
+}
+.person-soc-link:hover,
+.person-soc-link:focus{
+background-color: var(--accent-color);
+}
+.person-soc-link:hover,
+.person-soc-link:focus
+.person-soc-icon
+{
+fill: var(--primary-white-color);
+}
+
+.customers-list{
+  display: flex;
+  gap: 30px;
+}
+.customers-item{
+  width: calc((100% - 150px) / 6);
+height: 90px;
+}
+.customers-link{
+width: 100%;
+height: 100%;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.customers-list-icon{
+  fill: #AFB1B8;
+  background-position: center;
 }

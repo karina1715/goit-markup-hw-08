@@ -7,10 +7,10 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  </head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
   <body>
     <header class="header-wrapper">
       <div class="container flex justified-between">
@@ -34,20 +34,18 @@
         </nav>
         <ul class="auth-nav list">
           <li class="item">
-            <a class="contacts active-text" href="malto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="contacts active-text" href="malto:info@devstudio.com">info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a class="contacts active-text" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="contacts active-text" href="tel:+380961111111">+38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hero dark-bg">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         </div>
@@ -124,9 +122,39 @@
                 src="./imagest/img.jpg"
                 alt="фото Ігоря Дем'яненко"
                 width="270">
-              <div class="perso-info-wrapper">
+              <div class="person-info-wrapper">
                 <h3 class="person-name">Ігор Дем'яненко</h3>
                 <p class="text-gray person-text">Product Designer</p>
+                <ul class="person-soc-list list">
+                  <li class="person-soc-item">
+                  <a href="" class="person-soc-link link">
+                    <svg class="person-soc-icon" width="20px" height="20px">
+                    <use href="./imagest/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="16.25px">
+                      <use href="./imagest/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="10px" height="20px">
+                      <use href="./imagest/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="20px">
+                      <use href="./imagest/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="list-item">
@@ -134,9 +162,39 @@
                 src="./imagest/img-2.jpg"
                 alt="фото Ольги Рєпіної"
                 width="270">
-              <div class="perso-info-wrapper">
+              <div class="person-info-wrapper">
                 <h3 class="person-name">Ольга Рєпіна</h3>
                 <p class="text-gray person-text">Frontend Developer</p>
+               <ul class="person-soc-list list">
+                  <li class="person-soc-item">
+                  <a href="" class="person-soc-link link">
+                    <svg class="person-soc-icon" width="20px" height="20px">
+                    <use href="./imagest/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="16.25px">
+                      <use href="./imagest/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="10px" height="20px">
+                      <use href="./imagest/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="20px">
+                      <use href="./imagest/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="list-item">
@@ -144,9 +202,39 @@
                 src="./imagest/img-3.jpg"
                 alt="фото Миколи Тарасова"
                 width="270">
-              <div class="perso-info-wrapper">
+              <div class="person-info-wrapper">
                 <h3 class="person-name">Микола Тарасов</h3>
                 <p class="text-gray person-text">Marketing</p>
+               <ul class="person-soc-list list">
+                  <li class="person-soc-item">
+                  <a href="" class="person-soc-link link">
+                    <svg class="person-soc-icon" width="20px" height="20px">
+                    <use href="./imagest/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="16.25px">
+                      <use href="./imagest/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="10px" height="20px">
+                      <use href="./imagest/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="20px">
+                      <use href="./imagest/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="list-item">
@@ -154,11 +242,84 @@
                 src="./imagest/img-4.jpg"
                 alt="фото Михайла Єрмакова"
                 width="270">
-              <div class="perso-info-wrapper">
+              <div class="person-info-wrapper">
                 <h3 class="person-name">Михайло Єрмаков</h3>
                 <p class="text-gray person-text">UI Designer</p>
+                <ul class="person-soc-list list">
+                  <li class="person-soc-item">
+                  <a href="" class="person-soc-link link">
+                    <svg class="person-soc-icon" width="20px" height="20px">
+                    <use href="./imagest/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="16.25px">
+                      <use href="./imagest/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="10px" height="20px">
+                      <use href="./imagest/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="person-soc-item">
+                    <a href="" class="person-soc-link link">
+                      <svg class="person-soc-icon" width="20px" height="20px">
+                      <use href="./imagest/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                  </li>
+                </ul>
               </div>
             </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Постійні клієнти</h2>
+          <ul class="customers-list list">
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-5"></use>
+            </svg>
+          </a> 
+          </li>
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-1"></use>
+            </svg>
+          </a>  
+          </li>
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-6"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-2"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-3"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="customers-item"><a href="" class="customers-link link">
+            <svg class="customers-list-icon" width="106px" height="60px">
+              <use href="./imagest/icons.svg#icon-group-4"></use>
+            </svg>
+          </a>
+          </li>
           </ul>
         </div>
       </section>
@@ -195,6 +356,39 @@
           </ul>
         </address>
       </div>
+      <div class="icons-wrapper">
+            <h3 class="offer-action">ПРИЄДНУЙТЕСЬ</h3>
+            <ul class="actions list">
+              <li>
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="20px">
+                    <use href="./imagest/icons.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="16.25px">
+                    <use href="./imagest/icons.svg#icon-envelope"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button">
+                  <svg class="button-icon" width="10px" height="20px">
+                    <use href="./imagest/icons.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button">
+                  <svg class="button-icon" width="20" height="20px">
+                    <use href="./imagest/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
     </footer>
   </body>
 </html>
