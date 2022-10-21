@@ -34,11 +34,17 @@
         </nav>
         <ul class="auth-nav list">
           <li class="item">
-            <a class="contacts active-text" href="malto:info@devstudio.com">info@devstudio.com
+            <a class="contacts active-text" href="malto:info@devstudio.com">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./imagest/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com
             </a>
           </li>
           <li class="item">
-            <a class="contacts active-text" href="tel:+380961111111">+38 096 111 11 11
+            <a class="contacts active-text" href="tel:+380961111111">
+              <svg class="contacts-icon active-text" width="10" height="16">
+                <use href="./imagest/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -57,6 +63,9 @@
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list feature-list">
             <li class="item">
+              <svg class="feature-icon" width="70" height="70">
+                <use href="./imagest/icons.svg#icon-antenna" ></use>
+              </svg>
               <h3 class="details-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text-gray details-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -64,6 +73,9 @@
               </p>
             </li>
             <li class="item">
+               <svg class="feature-icon" width="70" height="70">
+                <use href="./imagest/icons.svg#icon-clock"></use>
+              </svg>
               <h3 class="details-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="text-gray details-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -71,12 +83,18 @@
               </p>
             </li>
             <li class="item">
+               <svg class="feature-icon" width="70" height="70">
+                <use href="./imagest/icons.svg#icon-diagram"></use>
+              </svg>
               <h3 class="details-title">ПЛАНУВАННЯ</h3>
               <p class="text-gray details-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
+               <svg class="feature-icon" width="70" height="70">
+                <use href="./imagest/icons.svg#icon-astronaut"></use>
+              </svg>
               <h3 class="details-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text-gray details-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -326,7 +344,8 @@
     </main>
     <!--footer-->
     <footer class="dark-bg contacts-wrapper">
-      <div class="container">
+    <div class="container address-part">
+        <div class="container">
         <a class="logo-white" href="/index.html"
           ><span class="logo-part-white">Web</span>Studio</a
         >
@@ -356,7 +375,7 @@
           </ul>
         </address>
       </div>
-      <div class="icons-wrapper">
+      <div class="icons-wrapper container">
             <h3 class="offer-action">ПРИЄДНУЙТЕСЬ</h3>
             <ul class="actions list">
               <li>
@@ -369,13 +388,13 @@
               <li>
                 <button class="button">
                   <svg class="button-icon" width="20px" height="16.25px">
-                    <use href="./imagest/icons.svg#icon-envelope"></use>
+                    <use href="./imagest/icons.svg#icon-twitter"></use>
                   </svg>
                 </button>
               </li>
               <li>
                 <button class="button">
-                  <svg class="button-icon" width="10px" height="20px">
+                  <svg class="button-icon" width="10" height="20">
                     <use href="./imagest/icons.svg#icon-facebook"></use>
                   </svg>
                 </button>
@@ -389,6 +408,7 @@
               </li>
             </ul>
           </div>
+    </div>
     </footer>
   </body>
 </html>
