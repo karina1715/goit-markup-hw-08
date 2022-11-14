@@ -13,15 +13,11 @@
   justify-content: space-between;
 }
 .header__navigation {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 .logo {
+  @include font(26px, 1.19, 700, 0.03em);
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--black-color);
   text-decoration: none;
 }
@@ -31,67 +27,59 @@
 .menu {
   display: flex;
   margin-left: 93px;
-}
-.menu .menu__item:not(:last-child) {
-  margin-right: 50px;
+  & .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .menu__link {
+  @include font(14px, 1.14, 500, 0.02em);
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .active-link {
   color: var(--accent-color);
   position: relative;
-}
-.active-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 .connect {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 .header__connect .connect__item + .connect__item {
   margin-left: 50px;
 }
 .connect__link {
-  display: flex;
+  @extend %align-list;
+  @include font(14px, 1.14, 500, 0.02em);
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--title-text-color);
-  align-items: center;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
-}
-.connect__link:hover,
-.connect__link:focus {
-  color: var(--accent-color);
 }

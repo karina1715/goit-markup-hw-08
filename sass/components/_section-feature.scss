@@ -8,10 +8,11 @@
 }
 .feature .feature__item {
   width: 25%;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.feature .feature__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .feature__wrapp-icon {
   height: 120px;
   border-radius: 4px;
@@ -28,17 +29,12 @@
   background-repeat: no-repeat;
 }
 .feature__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 .feature__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, null, 0.03em);
   color: var(--title-text-color);
 }
