@@ -1,10 +1,18 @@
 .contacts {
+  display: flex;
+  flex-wrap: wrap;
   padding: 60px 0;
   background-color: var(--dark-bg);
 }
 .contacts__wrapper {
-  display: flex;
+  width: 100%;
   align-items: baseline;
+  @media screen and (min-width: 768px){
+    max-width: 768;
+  }
+  @media screen and (min-width: 1200px){
+    max-width: 1200px;
+  } 
 }
 .contacts__part {
   margin-right: 70px;
@@ -52,13 +60,11 @@
   margin-bottom: 20px;
 }
 .actions {
-  display: flex;
   margin: 0;
   padding: 0;
 }
 .actions .icon-edit {
   content: "";
-  display: flex;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -81,14 +87,12 @@
   @extend %align-list;
   justify-content: center;
   border-radius: 50%;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
   }
 }
-
 .actions__icon {
   fill: currentColor;
 }
@@ -99,12 +103,10 @@
   margin-bottom: 23px;
 }
 .speaker-form {
-  display: flex;
   & textarea:placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
 }
-
 .speaker-form__email {
   width: 358px;
   height: 50px;
