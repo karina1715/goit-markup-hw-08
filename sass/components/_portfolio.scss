@@ -38,11 +38,14 @@
   gap: 30px;
   margin-top: 50px;
 }
-.gallery-listgal__item {
-  flex-basis: calc((100% - 60px) / 3);
-  &:nth-child(n + 3) {
-    margin-right: 0;
+.gallery-list__item {
+  width: 100%;
+  @media screen and (min-width: 768px){
+    width: calc((100% - 30px) / 2);
   }
+  @media screen and (min-width: 1200px){
+    width: calc((100% - 60px) / 3);
+}
 }
 .gallery-list__link {
   text-decoration: none;

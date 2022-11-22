@@ -1,18 +1,63 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
- padding: 118px 60px;
   text-align: center;
   max-width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #c4c4c4; 
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../imagest/img111.jpg);
-  background-color: #c4c4c4;
+    url(../imagest/hero-bg-mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imagest/hero-bg-mobile-2x.jpg);;
+}
+    @media screen and (min-width: 768px){
+      padding: 118px 204px 118px 204px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imagest/hero-bg-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imagest/hero-bg-tablet-2x.jpg);
+  }
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../imagest/hero-bg-laptop.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../imagest/hero-bg-laptop-2x.jpg);
+      }
+    }
 }
 .hero__title {
   @include font(26px, 1.61, 900, 0.06em);
@@ -23,6 +68,11 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  @media screen and (min-width: 1200px){
+  font-size: 44px;
+  line-height: 1.36;
+  max-width: 696px;
+  }
 }
 .hero__button {
   @include font(16px, 1.87, 700, 0.06em);

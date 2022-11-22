@@ -22,7 +22,12 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
   padding: 40px;
+  @media screen and (max-width: 1200px){
+    width: 450px;
+    height: 609px;
+  }
 }
+
 .backdrop-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
