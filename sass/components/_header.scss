@@ -24,14 +24,14 @@
   color: var(--accent-color);
 }
 .menu {
-  @media screen and (max-width: 768px){
-    display: none;
- }
- display: flex;
+  display: none;
+  @media screen and (min-width: 768px){
+     display: flex;
   margin-left: 93px;
   & .menu__item:not(:last-child) {
     margin-right: 50px;
   }
+ }
 }
 .menu__link {
   @include font(14px, 1.14, 500, 0.02em);
@@ -68,17 +68,16 @@
   }
 }
 .connect {
-  @media screen and (max-width: 768px){
-    display: none;
- }
- @media screen and (min-width: 768px){
-  padding-top: 21px;
-}
-@media screen and (min-width: 1200px){
+   display: none;
+@media screen and (min-width: 768px){
   display: flex;
   align-items: center;
 }
-
+}
+.header__connect .connect__item + .connect__item {
+  @media screen and (min-width: 1200px){
+   margin-left: 50px;
+  }
 }
 .connect__link {
   @extend %align-list;
@@ -91,16 +90,20 @@
     color: var(--accent-color);
   }
   @media screen and (min-width: 768px){
-    padding-bottom: 10px;
+   
   }
   @media screen and (min-width: 1200px){
-    margin-left: 50px;
+   
   }
 }
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
+  @media screen and (min-width: 1200px){
+  width: ;
+  height: ;
+  }
 }
 .menu-open{
   @media screen and (min-width: 768px){
@@ -190,7 +193,6 @@ color: #757575;
 }
 .mob-soc{
 display: flex;
-
   margin-bottom: 44px;
 }
 
