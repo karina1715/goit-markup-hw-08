@@ -12,9 +12,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  transform: translate(-50%, -50%); 
+  width: 450px;
+  height: 609px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -22,9 +22,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
   padding: 40px;
-  @media screen and (max-width: 1200px){
-    width: 450px;
-    height: 609px;
+  @media screen and (min-width: 1200px){
+    width: 528px;
+  min-height: 581px;
   }
 }
 
@@ -123,10 +123,14 @@
 }
 .checkbox {
   @extend %align-list;
-  @include font(14px, 1.71, 400, 0.03em);
+  @include font(12px, 1.16, 400, 0.03em);
   justify-content: center;
   gap: 7px;
   color: var(--title-text-color);
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+    line-height: 1,71;
+  }
 }
 .custom-checkbox {
   position: relative;
@@ -156,9 +160,13 @@
   position: absolute;
 }
 .checkbox-link {
-  @include font(14px, 1.71, 400, 0.03em);
+  @include font(12px, 1.16, 400, 0.03em);
   text-decoration-line: underline;
   color: var(--accent-color);
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+    line-height: 1,71;
+  }
 }
 .form-button {
   @include font(16px, 1.87, 700, 0.06em);

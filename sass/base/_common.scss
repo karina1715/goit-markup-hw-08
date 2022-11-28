@@ -1,9 +1,13 @@
 
+html{
+overflow-x: hidden;
+}
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .section {

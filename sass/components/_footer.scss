@@ -1,31 +1,40 @@
 .contacts {
+  padding: 60px 0;
   background-color: var(--dark-bg);
 }
 .contacts__wrapper {
-  flex-wrap: wrap;
+  align-items: baseline;
   text-align: center;
- 
   @media screen and (min-width: 1200px){
-   align-items: baseline;
    display: flex;
- }
- @media screen and (min-width: 480px){
-  margin: 60px 0;
-    }
+   text-align: start;
+  }
 }
 .contacts__aling{
+  align-items: baseline;
+  @media screen and (min-width: 460px){
+    margin-bottom: 60px;
+    }
   @media screen and (min-width: 768px){
     display: flex;
-justify-content: space-around;
-    }
-    @media screen and (min-width: 1200px){
-      display: flex;
-      }
+    justify-content: space-around;
+   }
+  @media screen and (min-width: 1200px){
+    display: flex;
+    margin-bottom: 0;
+   }
 }
 .contacts__part {
-  @media screen and (min-width: 1200px){
-    margin-right: 70px;
+  @media screen and (min-width: 460px){
+    margin-bottom: 60px;
     }
+  @media screen and (min-width: 768px){
+    margin-bottom: 0;
+    }
+  @media screen and (min-width: 1200px){
+   margin-right: 70px;
+   }
+  
 }
 .contacts__logo {
   @include font(26px, 1.19, 700, 0.03em);
@@ -61,12 +70,9 @@ justify-content: space-around;
   }
 }
 .icons-wrapper {
-
-  @media screen and (min-width: 768px){
-  margin-right: 0;
-   }
-   @media screen and (min-width: 1200px){
-  margin-right: 93px;
+  align-items: baseline;
+  @media screen and (min-width: 1200px){
+    margin-right: 93px;
    }
 }
 .offer-action {
@@ -121,7 +127,7 @@ justify-content: space-around;
   @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin-bottom: 23px;  
+  margin-bottom: 20px;  
 }
 .speaker-form {
   & textarea:placeholder {
@@ -167,7 +173,7 @@ justify-content: space-around;
   &:focus {
     background-color: #188ce8;
   }
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1199px){
      margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
