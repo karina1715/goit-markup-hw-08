@@ -69,7 +69,7 @@
       </button>
       <ul class="mob-menu-list list">
         <li class="mob-menu-list__item">
-          <a href="#" class="mob-menu-list__link">Студія</a>
+          <a href="#" class="mob-menu-list__link color-link">Студія</a>
         </li>
         <li class="mob-menu-list__item">
           <a href="./portfolio.html" class="mob-menu-list__link">Портфоліо</a>
@@ -173,31 +173,46 @@
           <h2 class="pictures-wrapp__title">Чим ми займаємося</h2>
           <ul class="pictures list">
             <li class="pictures__item">
-              <img
+              <picture>
+                <source  srcset="./imagest/pictures-laptop.jpg 1x,
+                ./imagest/pictures-laptop-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+                <img
                 src="./imagest/img1.jpg"
                 alt="зображення ноутбука"
                 width="370"
               >
+              </picture>
               <div class="pictures__meta">
                 <h3 class="pictures__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="pictures__item">
-              <img
+              <picture>
+                <source  srcset="./imagest/pictures-mobile.jpg 1x,
+                ./imagest/pictures-mobile-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+                <img
                 src="./imagest/img-5.jpg"
                 alt="зображення телефона"
                 width="370"
               >
+              </picture>
               <div class="pictures__meta">
                 <h3 class="pictures__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="pictures__item">
-              <img
+              <picture>
+                <source  srcset="./imagest/pictures-tablet.jpg 1x,
+                ./imagest/pictures-tablet-2x.jpg 2x"
+                media="(min-width: 1200px)"> 
+             <img
                 src="./imagest/img2.jpg"
                 alt="зображення планшета"
                 width="370"
               >
+              </picture>  
               <div class="pictures__meta">
                 <h3 class="pictures__title">Дизайнерські рішення</h3>
               </div>

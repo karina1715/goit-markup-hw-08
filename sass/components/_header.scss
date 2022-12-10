@@ -190,16 +190,22 @@ height: 16px;
 .mob-connect__item:not(:last-child){
   margin-bottom: 32px;
 }
+.color-link{
+  color: var(--accent-color);
+}
 .mob-connect{
   margin-bottom: 64px;
 }
 .mob-connect-tel__link{
   text-decoration: none;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
+  @media screen and (min-width: 480px){
+    font-size: 34px;
+  }
 }
 .mob-connect-mail__link{
   text-decoration: none;

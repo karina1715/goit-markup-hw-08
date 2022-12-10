@@ -92,7 +92,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 480px;
   }
@@ -337,6 +337,10 @@ img {
   margin-bottom: 32px;
 }
 
+.color-link {
+  color: var(--accent-color);
+}
+
 .mob-connect {
   margin-bottom: 64px;
 }
@@ -488,6 +492,10 @@ img {
   margin: -1px;
 }
 
+.section-detail {
+  padding-bottom: 0;
+}
+
 .feature {
   display: flex;
   flex-wrap: wrap;
@@ -621,8 +629,13 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .team-section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .team {
@@ -788,7 +801,7 @@ img {
 .contacts__aling {
   align-items: baseline;
 }
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 320px) {
   .contacts__aling {
     margin-bottom: 60px;
   }
@@ -806,7 +819,7 @@ img {
   }
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 320px) {
   .contacts__part {
     margin-bottom: 60px;
   }
@@ -1015,14 +1028,19 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 100%;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

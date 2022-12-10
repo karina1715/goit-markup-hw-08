@@ -4,8 +4,11 @@
 .team-section__title {
   @include font(36px, 1.16, 700, 0.03em);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--primary-text-color);
+  @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+  }
 }
 .team {
   display: flex;
